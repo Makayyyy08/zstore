@@ -1,0 +1,74 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Mengatur konten menjadi tengah */
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Mengatur logo dan judul ke tengah */
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 50px; /* Ukuran logo */
+            height: auto;
+            margin-right: 10px;
+        }
+        .header h1 {
+            font-size: 1.8em;
+            margin: 0;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center; /* Mengatur konten pencarian ke tengah */
+            margin-bottom: 20px;
+        }
+        .search-container input {
+            padding: 10px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-container button {
+            padding: 10px 15px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #0056b3;
+        }
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            width: 100%; /* Menyesuaikan lebar daftar produk */
+            max-width: 1200px; /* Membatasi lebar maksimum */
+        }
+        .product-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-item h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .product-item a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
